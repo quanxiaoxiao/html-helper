@@ -1,0 +1,32 @@
+{
+  "name": "@quanxiaoxiao/html-helper",
+  "version": "0.1.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "test": "node --test"
+  },
+  "exports": {
+    ".": "./src/index.mjs",
+    "./package.json": "./package.json"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "main": "./src/index.mjs",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": ">= 20.0.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.35.0",
+    "eslint": "^9.35.0",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "globals": "^16.4.0"
+  },
+  "dependencies": {
+    "htmlparser2": "^10.0.0"
+  }
+}
