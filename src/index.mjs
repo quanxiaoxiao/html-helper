@@ -99,6 +99,18 @@ const insertInlineScript = (root, scriptText) => {
   headNode.children.push(scriptNode);
 };
 
+const insertInlineStyle = (root, styleText) => {
+  const headNode = ensureHeadNode(root);
+
+  const styleNode = {
+    name: 'style',
+    attribs: {},
+    children: [styleText],
+  };
+
+  headNode.children.push(styleNode);
+};
+
 const traverse = (node, callback) => {
   if (!node) {
     return;
@@ -322,6 +334,7 @@ export {
   hasNode,
   htmlToJson,
   insertInlineScript,
+  insertInlineStyle,
   insertLink,
   jsonToHtml,
   removeNodes,
